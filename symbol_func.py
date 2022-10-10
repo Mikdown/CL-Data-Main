@@ -18,12 +18,12 @@ def stock_symbol():
         print(df)
         df2 = df['Open'].mean()
         print(df2)
-    
-        return df
-        
+
     except FileNotFoundError:
         print("You have entered an invalid symbol! Please try again.")
         stock_symbol()
+
+    return df
     
     
     
